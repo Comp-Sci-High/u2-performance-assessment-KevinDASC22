@@ -41,7 +41,7 @@ async function aiimages(something) {
     console.log("HTTP error! Status:"+response.status)
   }
   const data = await response.json();
-  console.log(data.url);
+  console.log(data.data[0].url);
   return data;
 }catch(error){
   console.log("An error occurred:"+error.message)
